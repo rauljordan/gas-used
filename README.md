@@ -14,8 +14,13 @@ Licensed under [MIT](LICENSE-MIT).
 
 Create your command-line parser, with all of the bells and whistles, declaratively or procedurally.
 
-### Example
+### Usage
 
-<!-- Copied from examples/demo.{rs,md} -->
-```rust,no_run
-use clap::Parser;
+```
+gas-used \
+  --api-key=<ETHERSCAN_API_KEY> \
+  --contract=<CONTRACT_ADDRESS> \
+  -- <YOUR_ADDRESSES>
+```
+
+### Example
