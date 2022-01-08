@@ -1,6 +1,7 @@
 [package]
 name = "gas-used"
 version = "0.1.0"
+edition = "2021"
 authors = ["Raul Jordan <raul@prysmaticlabs.com>"]
 license = "MIT"
 description = "Simple CLI tool to count the gas used by accounts interacting with a specific Ethereum contract"
