@@ -8,19 +8,35 @@
 Licensed under [MIT](LICENSE-MIT).
 
 1. [About](#about)
-2. [Examples](#example)
+2. [Usage](#usage)
 
 ## About
 
-Create your command-line parser, with all of the bells and whistles, declaratively or procedurally.
+This is a simple CLI that can compute the total amount of gas used by a list of account addresses interacting with a specific contract on Ethereum. It can, for example, be used to count the total gas used by owners of a multisig contract when interacting with the multisig.
 
-### Usage
+## Installing
+
+```
+git clone https://github.com/rauljordan/gas-used && cd gas-used
+cargo install --bin gas-used --path .
+```
+
+## Usage
 
 ```
 gas-used \
   --api-key=<ETHERSCAN_API_KEY> \
   --contract=<CONTRACT_ADDRESS> \
-  -- <YOUR_ADDRESSES>
+  -- ADDRESS_1 ADDRESS_2
 ```
 
-### Example
+Sample output
+```
+Computing gas used for addresses: 0xf, 0x3
+Contract address: 0x9b984d5a03980d8dc0a24506c968465424c81dbe
+Querying page 1 of Etherscan API
+Querying page 2 of Etherscan API
+Querying page 3 of Etherscan API
+Querying page 4 of Etherscan API
+Address "0xf" has used 0.775665286702632882 ETH for gas
+Address "0x3" has used 1.220864757568855979 ETH for gas
