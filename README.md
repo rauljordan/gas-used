@@ -4,6 +4,7 @@
 > **Simple CLI tool to count the gas used by accounts interacting with a specific Ethereum contract**
 
 [![Crates.io](https://img.shields.io/crates/v/clap?style=flat-square)](https://crates.io/crates/gas-used)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Rust](https://github.com/rauljordan/gas-used/actions/workflows/rust.yml/badge.svg?branch=master)](https://github.com/rauljordan/gas-used/actions/workflows/rust.yml)
 
 Licensed under [MIT](LICENSE-MIT).
 
