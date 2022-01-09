@@ -1,6 +1,6 @@
 [package]
 name = "gas-used"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Raul Jordan <raul@prysmaticlabs.com>"]
 license = "MIT"
