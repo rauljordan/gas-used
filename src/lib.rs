@@ -100,19 +100,19 @@ mod test {
         let price = parse_units(WEI_IN_ETHER, "wei").unwrap();
         let txs = vec![
             Transaction {
-            from: String::from("foo"),
-            gasUsed: U256::from(1).to_string(),
-            gasPrice: price.to_string(),
+                from: String::from("foo"),
+                gasUsed: U256::from(1).to_string(),
+                gasPrice: price.to_string(),
             },
             Transaction {
-            from: String::from("foo"),
-            gasUsed: U256::from(1).to_string(),
-            gasPrice: price.to_string(),
+                from: String::from("foo"),
+                gasUsed: U256::from(1).to_string(),
+                gasPrice: price.to_string(),
             },
             Transaction {
-            from: String::from("bar"),
-            gasUsed: U256::from(1).to_string(),
-            gasPrice: price.to_string(),
+                from: String::from("bar"),
+                gasUsed: U256::from(1).to_string(),
+                gasPrice: price.to_string(),
             }
         ];
         let addresses = vec!["foo", "bar", "baz"];
